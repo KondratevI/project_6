@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 
 df = pd.read_csv('vehicles_us.csv')
-st.header('Header')
+st.header('Number of cylinders and relation between condition of a car and its price')
 st.write('Number of cylinders')
 histogram_cylinders = px.histogram(df, x="cylinders")
 st.plotly_chart(histogram_cylinders, use_container_width=False)
